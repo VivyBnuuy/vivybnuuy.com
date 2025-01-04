@@ -7,12 +7,12 @@
 // Util forwards
 @forward "util/functions";
 
+// Desktop forwards
+@forward "desktop/breakpoints";
+@forward "desktop/main";
+
 // Mobile forwards
-@forward "mobile/main";
 @forward "mobile/breakpoints";
 
 // Tablet forwards
 @forward "tablet/breakpoints";
-
-// Desktop forwards
-@forward "desktop/breakpoints";
