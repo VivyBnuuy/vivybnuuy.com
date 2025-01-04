@@ -2,7 +2,24 @@
 @use "../global/variables" as var;
 
 // Font sizes
+$header: util.rem(64);
+$paragraph: util.rem(22);
+$category: util.rem(28);
+$button: util.rem(24);
 
 // Shared sizes
 
 // Font weights
+$light: 300;
+$normal: 400;
+$medium: 500;
+$bold: 700;
+
+// Fonts 
+@font-face {
+    font-family: "Mulish";
+    src:
+      local("Mulish"),
+      url("../../../assets/fonts/Mulish/mulish-variablefont_wght-webfont.woff2") format("woff2");
+  }
+  

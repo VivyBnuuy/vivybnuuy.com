@@ -1,3 +1,202 @@
 @use "../util/functions" as util;
 @use "../global/variables" as var;
 @use "../global/typography" as fonts;
+
+body {
+   
+    font-family: "Mulish";
+
+    background-color: var(--black);
+
+    animation-duration: 3s;
+    animation-name: fade-in;
+
+    @keyframes fade-in {
+        from {
+            opacity: 0%;
+        }
+    }
+
+    to {
+        opacity: 100%;
+    }
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+
+    //background-image: url(../../../assets/images/vivyprofile.png);
+    background-color: purple;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    max-width: util.rem(700);
+
+    margin: util.rem(32) 0;
+}
+
+.contents {
+    display: grid;
+    justify-items: center;
+
+    padding: util.rem(32) util.rem(48);
+
+    border-radius: util.rem(32);
+
+    box-shadow: 0 util.rem(10) util.rem(8) 0 (rgba(0, 0, 0, 0.400));
+
+    background-color: rgba(0, 0, 0, 0.300);
+    backdrop-filter: blur(util.rem(64));
+
+    &__pfp {
+        width: util.rem(176);
+        height: util.rem(176);
+    
+        border-radius: util.rem(96);
+        border-style: solid;
+        border-width: util.rem(5);
+        border-color: var(--pink);
+    
+        box-shadow: 0 util.rem(10) util.rem(4) 0 (rgba(0, 0, 0, 0.300));
+
+        pointer-events: none;
+    }
+
+    &__header {
+        padding: util.rem(24) 0 util.rem(16) 0;
+
+        font-size: fonts.$header;
+        font-weight: fonts.$bold;
+
+        -webkit-text-stroke-width: util.rem(3);
+        -webkit-text-stroke-color: var(--white);
+    }
+
+    &__paragraph {
+        font-size: fonts.$paragraph;
+        font-weight: fonts.$bold;
+        text-align: center;
+        line-height: util.rem(32);
+
+        max-width: util.rem(350);
+    }
+}
+
+.buttons {
+    display: grid;
+    grid-template: 1fr / auto auto;
+    column-gap: util.rem(16);
+    align-items: center;
+    
+    text-decoration: none;
+    outline: none;
+
+    width: 100%;
+
+    border-radius: util.rem(32);
+
+    padding: util.rem(8) util.rem(32);
+
+    transition: all 0.2s ease-in-out;
+
+    box-shadow: 0 util.rem(6) util.rem(4) 0 (rgba(0, 0, 0, 0.300));
+
+    margin-bottom: util.rem(20);
+}
+
+/*
+.buttons:nth-child(5) {
+    margin-bottom: 0;
+}
+*/
+
+.buttons-text {
+    text-align: right;
+    font-size: fonts.$button;
+    font-weight: fonts.$bold;
+    letter-spacing: util.rem(1);
+
+    -webkit-text-stroke-width: util.rem(1.2);
+    -webkit-text-stroke-color: var(--white);
+}
+
+.buttons-icons {
+    grid-area: 1 / 2 / 2 / 3;
+
+    max-width: util.rem(48);
+    max-height: util.rem(48);
+}
+
+.buttons__kofi {
+    background: linear-gradient(0.25turn, var(--kofi1), var(--kofi2) 80%);
+}
+
+.buttons__bluesky {
+    background: linear-gradient(0.25turn, var(--bluesky1), var(--bluesky2) 80%);
+}
+
+.buttons__twitch {
+    background: linear-gradient(0.25turn, var(--twitch1), var(--twitch2) 80%);
+}
+
+.buttons__discord {
+    background: linear-gradient(0.25turn, var(--discord1), var(--discord2) 80%);
+}
+
+.buttons__throne {
+    background: linear-gradient(0.25turn, var(--throne1), var(--throne2) 80%);
+}
+
+.buttons__github {
+    background: linear-gradient(0.25turn, var(--github1), var(--github2) 80%);
+}
+
+.buttons__furaffinity {
+    background: linear-gradient(0.25turn, var(--furaffinity1), var(--furaffinity2) 80%);
+}
+
+.buttons-category {
+    display:grid;
+    grid-template: 1fr 1fr / 1fr auto 1fr;
+    column-gap: util.rem(16);
+    justify-content: center;
+
+    font-size: fonts.$category;
+    font-weight: fonts.$bold;
+
+    -webkit-text-stroke-width: util.rem(1.2);
+    -webkit-text-stroke-color: var(--white);
+
+    margin: util.rem(32) 0 util.rem(16) 0;
+}
+
+.buttons-category:before {
+    content: " ";
+    display: block;
+    border-bottom: util.rem(3) solid var(--pink);
+}
+
+.buttons-category:after {
+    content: " ";
+    display: block;
+    border-bottom: util.rem(3) solid var(--pink);
+}
+
+.buttons-category__text {
+    grid-area: 1/2/3/2;
+}
+
+
+.links-container {
+    width: util.rem(400);
+}
