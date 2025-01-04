@@ -83,7 +83,10 @@ body to {
   justify-content: center;
   min-width: -moz-fit-content;
   min-width: fit-content;
+  min-height: 100vh;
   background-image: url(../../../assets/images/vivyprofile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: purple;
 }
 
