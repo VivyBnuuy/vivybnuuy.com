@@ -84,10 +84,13 @@ body to {
   min-width: -moz-fit-content;
   min-width: fit-content;
   min-height: 100vh;
+  /*
   background-image: url(../../../assets/images/vivyprofile.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: purple;
+  */
+  background-color: rgb(255, 153, 190);
+  background-image: radial-gradient(circle, rgb(255, 153, 190) 0%, rgb(65, 42, 127) 60%);
 }
 
 .container {
