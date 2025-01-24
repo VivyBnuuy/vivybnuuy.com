@@ -197,3 +197,16 @@ body {
 .links-container {
     width: util.rem(400);
 }
+
+.footer {
+    display: grid;
+    justify-content: center;
+
+    margin-top: util.rem(48);
+
+    &__signature {
+        opacity: 20%;
+        width: util.rem(128);
+        height: util.rem(128);
+    }
+}

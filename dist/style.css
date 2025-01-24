@@ -214,6 +214,17 @@ body to {
   width: 25rem;
 }
 
+.footer {
+  display: grid;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.footer__signature {
+  opacity: 20%;
+  width: 8rem;
+  height: 8rem;
+}
+
 @media screen and (max-width: 660px) {
   .contents {
     padding: 2rem 2rem;
