@@ -7,3 +7,10 @@
 
     cursor: pointer;
 }
+
+.link:hover{
+    color: var(--light-pink);
+
+    -webkit-text-stroke-width: util.rem(1.2);
+    -webkit-text-stroke-color: var(--light-pink);
+}

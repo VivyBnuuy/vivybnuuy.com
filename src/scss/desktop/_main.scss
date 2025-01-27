@@ -93,6 +93,10 @@ body {
         line-height: util.rem(32);
 
         max-width: util.rem(400);
+
+        &-comms {
+            margin-top: util.rem(24);
+        }
     }
 }
 
@@ -154,6 +158,10 @@ body {
         background: linear-gradient(0.25turn, var(--kofi1), var(--kofi2) 80%);
     }
 
+    &__portfolio {
+        background: linear-gradient(0.25turn, var(--portfolio1), var(--portfolio2) 80%);
+    }
+
     &__throne {
         background: linear-gradient(0.25turn, var(--throne1), var(--throne2) 80%);
     }
@@ -209,4 +217,15 @@ body {
         width: util.rem(128);
         height: util.rem(128);
     }
+}
+
+.link {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: fonts.$bold;
+
+    -webkit-text-stroke-width: util.rem(1);
+    -webkit-text-stroke-color: var(--white);
+
+    transition: all 0.2s ease-in-out;
 }
