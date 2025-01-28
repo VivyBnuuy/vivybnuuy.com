@@ -37,7 +37,7 @@
 }
 
 .portfolio__top__icon:hover {
-  scale: 110%;
+  scale: 120%;
   cursor: pointer;
 }
 .portfolio-card__info__icon:hover {
@@ -136,6 +136,7 @@ body to {
 }
 .portfolio__top {
   display: grid;
+  grid-template: auto/1fr auto;
   min-width: 100%;
   padding: 1rem 1rem;
 }
@@ -144,8 +145,19 @@ body to {
   height: 2rem;
   transition: all 0.2s ease-in-out;
 }
+.portfolio__top__header {
+  justify-self: center;
+  margin-left: 2rem;
+  font-size: 4rem;
+  font-weight: 700;
+  -webkit-text-stroke-width: 0.1875rem;
+  -webkit-text-stroke-color: var(--white);
+}
 .portfolio__contents {
-  padding: 2rem 3rem;
+  display: grid;
+  grid-template: auto/repeat(3, 1fr);
+  grid-gap: 1.5rem;
+  padding: 1rem 2rem 2rem;
 }
 .portfolio-card {
   display: grid;

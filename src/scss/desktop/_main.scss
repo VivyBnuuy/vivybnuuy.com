@@ -62,6 +62,7 @@ body {
 
     &__top {
         display: grid;
+        grid-template: auto / 1fr auto;
 
         min-width: 100%;
 
@@ -73,10 +74,25 @@ body {
 
             transition: all 0.2s ease-in-out;
         }
+
+        &__header {
+            justify-self: center;
+            margin-left: util.rem(32);
+
+            font-size: fonts.$header;
+            font-weight: fonts.$bold;
+    
+            -webkit-text-stroke-width: util.rem(3);
+            -webkit-text-stroke-color: var(--white);
+        }
     }
 
     &__contents {
-        padding: util.rem(32) util.rem(48);
+        display: grid;
+        grid-template: auto / repeat(3, 1fr);
+        grid-gap: util.rem(24);
+
+        padding: util.rem(16) util.rem(32) util.rem(32);
     }
 
     &-card {
