@@ -79,8 +79,87 @@ body {
         padding: util.rem(32) util.rem(48);
     }
 
-    &__card {
-        
+    &-card {
+        display: grid;
+        align-items: end;
+
+        width: util.rem(300);
+        height: util.rem(300);
+
+        background-color: var(--gray-dark);
+        background-size: cover;
+
+        border-radius: util.rem(32);
+
+        box-shadow: 0 util.rem(8) util.rem(4) 0 rgba(0, 0, 0, 0.4);
+
+        transition: all 0.2s ease-in-out;
+
+        overflow: hidden;
+
+        &__info {
+            display: grid;
+            grid-template: auto auto / auto;
+            align-content: center;
+
+            background-color: rgba(0, 0, 0, 0.4);
+
+            padding: util.rem(4) 0 0 0;
+
+            backdrop-filter: blur(util.rem(64));
+
+            &__text {
+                text-align: center;
+                padding: util.rem(4) 0;
+
+                font-weight: 500;
+                font-size: fonts.$card;
+
+                -webkit-text-stroke-width: util.rem(1);
+                -webkit-text-stroke-color: var(--white);
+            }
+
+            &__icons {
+                display: grid;
+                grid-template: auto / util.rem(32) util.rem(32) auto util.rem(28) util.rem(28);
+
+                padding: util.rem(4) 0 util.rem(8) 0;
+
+                justify-items: center;
+                justify-content: center;
+                align-items: center;
+
+                margin: 0 util.rem(32);
+            }
+
+            &__icon {
+                width: util.rem(28);
+                height: util.rem(28);
+
+                transition: all 0.2s ease-in-out;
+            }
+
+            &__separator {
+                border-right: util.rem(3) solid var(--pink);
+
+                margin-right: util.rem(10);
+                margin-left: util.rem(4);
+            }
+        }
+    }
+}
+
+.project1 {
+    background-image: url("https://user-images.githubusercontent.com/47509295/180346891-a7081011-5457-4bf5-b4a0-06e003f499a1.png");
+    background-size: cover;
+    background-position: center;
+
+    &-icons a:nth-of-type(3) {
+        grid-area: 1 / 4 / 2 / 5;
+    }
+
+    &-icons a:nth-of-type(4) {
+        grid-area: 1 / 5 / 2 / 6;
     }
 }
 

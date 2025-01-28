@@ -40,6 +40,10 @@
   scale: 110%;
   cursor: pointer;
 }
+.portfolio-card__info__icon:hover {
+  scale: 115%;
+  cursor: pointer;
+}
 
 /* makes sizing simpler */
 *,
@@ -136,6 +140,67 @@ body to {
 .portfolio__contents {
   padding: 2rem 3rem;
 }
+.portfolio-card {
+  display: grid;
+  align-items: end;
+  width: 18.75rem;
+  height: 18.75rem;
+  background-color: var(--gray-dark);
+  background-size: cover;
+  border-radius: 2rem;
+  box-shadow: 0 0.5rem 0.25rem 0 rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+}
+.portfolio-card__info {
+  display: grid;
+  grid-template: auto auto/auto;
+  align-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.25rem 0 0 0;
+  -webkit-backdrop-filter: blur(4rem);
+          backdrop-filter: blur(4rem);
+}
+.portfolio-card__info__text {
+  text-align: center;
+  padding: 0.25rem 0;
+  font-weight: 500;
+  font-size: 1.25rem;
+  -webkit-text-stroke-width: 0.0625rem;
+  -webkit-text-stroke-color: var(--white);
+}
+.portfolio-card__info__icons {
+  display: grid;
+  grid-template: auto/2rem 2rem auto 1.75rem 1.75rem;
+  padding: 0.25rem 0 0.5rem 0;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2rem;
+}
+.portfolio-card__info__icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  transition: all 0.2s ease-in-out;
+}
+.portfolio-card__info__separator {
+  border-right: 0.1875rem solid var(--pink);
+  margin-right: 0.625rem;
+  margin-left: 0.25rem;
+}
+
+.project1 {
+  background-image: url("https://user-images.githubusercontent.com/47509295/180346891-a7081011-5457-4bf5-b4a0-06e003f499a1.png");
+  background-size: cover;
+  background-position: center;
+}
+.project1-icons a:nth-of-type(3) {
+  grid-area: 1/4/2/5;
+}
+.project1-icons a:nth-of-type(4) {
+  grid-area: 1/5/2/6;
+}
+
 .contents {
   display: grid;
   justify-items: center;
