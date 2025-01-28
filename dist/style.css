@@ -36,6 +36,11 @@
   -webkit-text-stroke-color: var(--light-pink);
 }
 
+.portfolio__top__icon:hover {
+  scale: 110%;
+  cursor: pointer;
+}
+
 /* makes sizing simpler */
 *,
 *::before,
@@ -109,6 +114,28 @@ body to {
   margin: 2rem 0;
 }
 
+.portfolio {
+  display: grid;
+  justify-items: center;
+  border-radius: 2rem;
+  box-shadow: 0 0.625rem 0.5rem 0 rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(4rem);
+          backdrop-filter: blur(4rem);
+}
+.portfolio__top {
+  display: grid;
+  min-width: 100%;
+  padding: 1rem 1rem;
+}
+.portfolio__top__icon {
+  width: 2rem;
+  height: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+.portfolio__contents {
+  padding: 2rem 3rem;
+}
 .contents {
   display: grid;
   justify-items: center;

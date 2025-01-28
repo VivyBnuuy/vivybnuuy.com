@@ -14,3 +14,12 @@
     -webkit-text-stroke-width: util.rem(1.2);
     -webkit-text-stroke-color: var(--light-pink);
 }
+
+.portfolio {
+
+    &__top__icon:hover {
+        scale: 110%;
+
+        cursor: pointer;
+    }
+}
