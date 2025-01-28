@@ -16,7 +16,6 @@
 }
 
 .portfolio {
-
     &__top__icon:hover {
         scale: 110%;
 
@@ -27,4 +26,12 @@
         scale: 115%;
         cursor: pointer;
     }
+}
+
+[tooltip]:hover::after,
+[tooltip]:hover::before {
+    opacity: 100%;
+
+    transition: all 0.2s ease-in-out;
+    transition-delay: 0.3s;
 }
