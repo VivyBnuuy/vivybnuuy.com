@@ -137,7 +137,7 @@ body {
 
             &__icons {
                 display: grid;
-                grid-template: auto / util.rem(32) util.rem(32) auto util.rem(28) util.rem(28);
+                grid-template: auto / repeat(2, auto) auto repeat(4, auto);
 
                 padding: util.rem(4) 0 util.rem(8) 0;
 
@@ -163,27 +163,62 @@ body {
             &__separator {
                 border-right: util.rem(3) solid var(--pink);
 
-                margin-right: util.rem(10);
+                margin-right: util.rem(8);
                 margin-left: util.rem(4);
             }
         }
     }
 }
 
-.project1 {
-    background-image: url("https://user-images.githubusercontent.com/47509295/180346891-a7081011-5457-4bf5-b4a0-06e003f499a1.png");
+.project {
     background-size: cover;
     background-position: center;
 
-    &-icons a:nth-of-type(3) {
-        grid-area: 1 / 4 / 2 / 5;
+    &-icons a:nth-of-type(1) {
+        margin-right: util.rem(4);
     }
 
     &-icons a:nth-of-type(4) {
-        grid-area: 1 / 5 / 2 / 6;
-
         margin-left: util.rem(2);
     }
+
+    &-icons a:nth-of-type(5) {
+        margin-left: util.rem(5);
+
+        width: util.rem(25);
+        height: util.rem(25);
+    }
+
+    &-icons a:nth-of-type(6) {
+        margin-left: util.rem(8);
+
+        width: util.rem(25);
+        height: util.rem(25);
+    }
+}
+
+.thumbnail1 {
+    background-image: url("https://user-images.githubusercontent.com/47509295/180346891-a7081011-5457-4bf5-b4a0-06e003f499a1.png");
+}
+
+.thumbnail2 {
+    background-image: url("https://user-images.githubusercontent.com/47509295/181582028-94c58f1e-0907-42a2-821f-ecd4007e8abb.png");
+}
+
+.thumbnail3 {
+    background-image: url("https://user-images.githubusercontent.com/47509295/204004995-38dd33f2-f2fa-4a8e-a45c-c1f70ee314d7.png");
+}
+
+.thumbnail4 {
+    background-image: url("https://user-images.githubusercontent.com/47509295/202753103-71de50c7-932b-4601-810e-e2fcea9bb2ef.png");
+}
+
+.thumbnail5 {
+    background-image: url("https://user-images.githubusercontent.com/47509295/188201062-cf9846c7-d546-4905-b8aa-394acb5f3fa8.png");
+}
+
+.thumbnail6 {
+    background-image: url("https://user-images.githubusercontent.com/47509295/209034490-77b8eb7b-553a-4a2a-949e-f368ad1c749d.png");
 }
 
 .contents {
