@@ -31,14 +31,10 @@ body {
     min-width: fit-content;
     min-height: 100vh;
 
-    /*
-    background-image: url(../../../assets/images/vivyprofile.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    */
-
     background-color: rgb(255,153,190);
-    background-image: radial-gradient(circle, rgba(255,153,190,1) 0%, rgba(65,42,127,1) 60%);
+    background-image: url(../../../assets/images/background.png), radial-gradient(circle, rgba(255,153,190,1) 0%, rgba(65,42,127,1) 60%);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
 }
 
 .container {
@@ -61,6 +57,8 @@ body {
 
     background-color: rgba(0, 0, 0, 0.300);
     backdrop-filter: blur(util.rem(64));
+
+    opacity: 100%;
 
     &__pfp {
         width: util.rem(176);
@@ -231,7 +229,7 @@ body {
 }
 
 .portfolio {
-    display: grid;
+    display: none;
     justify-items: center;
 
     border-radius: util.rem(32);
@@ -247,7 +245,7 @@ body {
 
         min-width: 100%;
 
-        padding: util.rem(16) util.rem(16);
+        padding: util.rem(16) util.rem(16) 0;
 
         &__icon {
             width: util.rem(32);
@@ -268,12 +266,27 @@ body {
         }
     }
 
+    &-header {
+        width: 60%;
+    }
+
     &__contents {
         display: grid;
         grid-template: auto / repeat(3, 1fr);
         grid-gap: util.rem(24);
 
         padding: util.rem(16) util.rem(48) util.rem(52);
+
+        &__header {
+            justify-self: center;
+            margin: util.rem(16) util.rem(32) 0;
+
+            font-size: fonts.$header-m;
+            font-weight: fonts.$bold;
+    
+            -webkit-text-stroke-width: util.rem(3);
+            -webkit-text-stroke-color: var(--white);
+        }
     }
 
     &-card {
@@ -292,8 +305,6 @@ body {
 
         transition: all 0.2s ease-in-out;
 
-        overflow: hidden;
-
         &__info {
             display: grid;
             grid-template: auto auto / auto;
@@ -304,6 +315,8 @@ body {
             padding: util.rem(4) 0 0 0;
 
             backdrop-filter: blur(util.rem(64));
+
+            border-radius: 0 0 util.rem(32) util.rem(32);
 
             &__text {
                 text-align: center;
@@ -357,10 +370,23 @@ body {
 
     &-icons a:nth-of-type(1) {
         margin-right: util.rem(4);
+
+        width: util.rem(24);
+        height: util.rem(24);
+    }
+
+    &-icons a:nth-of-type(2) {
+        margin-top: util.rem(2);
+
+    }
+
+    &-icons a:nth-of-type(3) {
+        margin-bottom: util.rem(2);
     }
 
     &-icons a:nth-of-type(4) {
         margin-left: util.rem(2);
+        margin-bottom: util.rem(2);
     }
 
     &-icons a:nth-of-type(5) {

@@ -1,3 +1,36 @@
 @use "../util/functions" as util;
 @use "../global/variables" as var;
 @use "../global/typography" as fonts;
+
+@media screen and (max-width: 1100px) {
+    .portfolio {
+        &__contents {
+            grid-template: auto / repeat(2, 1fr);
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .portfolio {
+        &__contents {
+            grid-template: auto / 1fr;
+        }
+    }
+
+    .exit-icon::after{
+        transform: translateX(-85%)   translateY(-100%);
+    }
+
+    .buttons-category {
+        display: block;
+        text-align: center;
+
+        &::before, &::after {
+            display: none;
+        }
+    }
+
+    .buttons-category__text {
+        text-align: center;
+    }
+}
