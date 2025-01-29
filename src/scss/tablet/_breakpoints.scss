@@ -8,6 +8,10 @@
             grid-template: auto / repeat(2, 1fr);
         }
     }
+
+    .exit-icon::after {
+        transform: translateX(-85%)   translateY(-100%);
+    }
 }
 
 @media screen and (max-width: 760px) {
@@ -17,7 +21,7 @@
         }
     }
 
-    .exit-icon::after{
+    .exit-icon::after {
         transform: translateX(-85%)   translateY(-100%);
     }
 
