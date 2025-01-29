@@ -184,6 +184,21 @@ body {
     
         &__text {
             grid-area: 1/2/3/2;
+
+            &-portfolio {
+                display:grid;
+                grid-template: 1fr 1fr / 1fr auto 1fr;
+                column-gap: util.rem(16);
+                justify-content: center;
+            
+                font-size: fonts.$category;
+                font-weight: fonts.$bold;
+            
+                -webkit-text-stroke-width: util.rem(1.2);
+                -webkit-text-stroke-color: var(--white);
+            
+                margin: util.rem(32) 0 util.rem(16) 0;
+            }
         }
     
         &:before {
