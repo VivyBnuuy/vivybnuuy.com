@@ -125,138 +125,6 @@ body to {
   margin: 2rem 0;
 }
 
-.portfolio {
-  display: grid;
-  justify-items: center;
-  border-radius: 2rem;
-  box-shadow: 0 0.625rem 0.5rem 0 rgba(0, 0, 0, 0.4);
-  background-color: rgba(0, 0, 0, 0.3);
-  -webkit-backdrop-filter: blur(4rem);
-          backdrop-filter: blur(4rem);
-}
-.portfolio__top {
-  display: grid;
-  grid-template: auto/1fr auto;
-  min-width: 100%;
-  padding: 1rem 1rem;
-}
-.portfolio__top__icon {
-  width: 2rem;
-  height: 2rem;
-  transition: all 0.2s ease-in-out;
-}
-.portfolio__top__header {
-  justify-self: center;
-  margin-left: 2rem;
-  font-size: 4rem;
-  font-weight: 700;
-  -webkit-text-stroke-width: 0.1875rem;
-  -webkit-text-stroke-color: var(--white);
-}
-.portfolio__contents {
-  display: grid;
-  grid-template: auto/repeat(3, 1fr);
-  grid-gap: 1.5rem;
-  padding: 1rem 2rem 2rem;
-}
-.portfolio-card {
-  display: grid;
-  align-items: end;
-  width: 18.75rem;
-  height: 18.75rem;
-  background-color: var(--gray-dark);
-  background-size: cover;
-  border-radius: 2rem;
-  box-shadow: 0 0.5rem 0.25rem 0 rgba(0, 0, 0, 0.4);
-  transition: all 0.2s ease-in-out;
-  overflow: hidden;
-}
-.portfolio-card__info {
-  display: grid;
-  grid-template: auto auto/auto;
-  align-content: center;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 0.25rem 0 0 0;
-  -webkit-backdrop-filter: blur(4rem);
-          backdrop-filter: blur(4rem);
-}
-.portfolio-card__info__text {
-  text-align: center;
-  padding: 0.25rem 0;
-  font-weight: 500;
-  font-size: 1.25rem;
-  -webkit-text-stroke-width: 0.0625rem;
-  -webkit-text-stroke-color: var(--white);
-}
-.portfolio-card__info__icons {
-  display: grid;
-  grid-template: auto/repeat(2, auto) auto repeat(4, auto);
-  padding: 0.25rem 0 0.5rem 0;
-  justify-items: center;
-  justify-content: center;
-  align-items: center;
-  margin: 0 2rem;
-}
-.portfolio-card__info__icon {
-  width: 1.75rem;
-  height: 1.75rem;
-  transition: all 0.2s ease-in-out;
-}
-.portfolio-card__info__icon-n {
-  width: 1.75rem;
-  height: 1.75rem;
-}
-.portfolio-card__info__separator {
-  border-right: 0.1875rem solid var(--pink);
-  margin-right: 0.5rem;
-  margin-left: 0.25rem;
-}
-
-.project {
-  background-size: cover;
-  background-position: center;
-}
-.project-icons a:nth-of-type(1) {
-  margin-right: 0.25rem;
-}
-.project-icons a:nth-of-type(4) {
-  margin-left: 0.125rem;
-}
-.project-icons a:nth-of-type(5) {
-  margin-left: 0.3125rem;
-  width: 1.5625rem;
-  height: 1.5625rem;
-}
-.project-icons a:nth-of-type(6) {
-  margin-left: 0.5rem;
-  width: 1.5625rem;
-  height: 1.5625rem;
-}
-
-.thumbnail1 {
-  background-image: url("https://user-images.githubusercontent.com/47509295/180346891-a7081011-5457-4bf5-b4a0-06e003f499a1.png");
-}
-
-.thumbnail2 {
-  background-image: url("https://user-images.githubusercontent.com/47509295/181582028-94c58f1e-0907-42a2-821f-ecd4007e8abb.png");
-}
-
-.thumbnail3 {
-  background-image: url("https://user-images.githubusercontent.com/47509295/204004995-38dd33f2-f2fa-4a8e-a45c-c1f70ee314d7.png");
-}
-
-.thumbnail4 {
-  background-image: url("https://user-images.githubusercontent.com/47509295/202753103-71de50c7-932b-4601-810e-e2fcea9bb2ef.png");
-}
-
-.thumbnail5 {
-  background-image: url("https://user-images.githubusercontent.com/47509295/188201062-cf9846c7-d546-4905-b8aa-394acb5f3fa8.png");
-}
-
-.thumbnail6 {
-  background-image: url("https://user-images.githubusercontent.com/47509295/209034490-77b8eb7b-553a-4a2a-949e-f368ad1c749d.png");
-}
-
 .contents {
   display: grid;
   justify-items: center;
@@ -395,6 +263,142 @@ body to {
   -webkit-text-stroke-width: 0.0625rem;
   -webkit-text-stroke-color: var(--white);
   transition: all 0.2s ease-in-out;
+}
+
+.portfolio {
+  display: grid;
+  justify-items: center;
+  border-radius: 2rem;
+  box-shadow: 0 0.625rem 0.5rem 0 rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(4rem);
+          backdrop-filter: blur(4rem);
+}
+.portfolio__top {
+  display: grid;
+  grid-template: auto/1fr auto;
+  min-width: 100%;
+  padding: 1rem 1rem;
+}
+.portfolio__top__icon {
+  width: 2rem;
+  height: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+.portfolio__top__header {
+  justify-self: center;
+  margin: 1rem 2rem 0;
+  font-size: 4rem;
+  font-weight: 700;
+  -webkit-text-stroke-width: 0.1875rem;
+  -webkit-text-stroke-color: var(--white);
+}
+.portfolio__contents {
+  display: grid;
+  grid-template: auto/repeat(3, 1fr);
+  grid-gap: 1.5rem;
+  padding: 1rem 3rem 3.25rem;
+}
+.portfolio-card {
+  display: grid;
+  align-items: end;
+  width: 18.75rem;
+  height: 18.75rem;
+  background-color: var(--gray-dark);
+  background-size: cover;
+  border-radius: 2rem;
+  box-shadow: 0 0.5rem 0.25rem 0 rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+}
+.portfolio-card__info {
+  display: grid;
+  grid-template: auto auto/auto;
+  align-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.25rem 0 0 0;
+  -webkit-backdrop-filter: blur(4rem);
+          backdrop-filter: blur(4rem);
+}
+.portfolio-card__info__text {
+  text-align: center;
+  padding: 0.25rem 0;
+  font-weight: 500;
+  font-size: 1.25rem;
+  -webkit-text-stroke-width: 0.0625rem;
+  -webkit-text-stroke-color: var(--white);
+}
+.portfolio-card__info__icons {
+  display: grid;
+  grid-template: auto/repeat(2, auto) auto repeat(4, auto);
+  padding: 0.25rem 0 0.5rem 0;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2rem;
+}
+.portfolio-card__info__icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  transition: all 0.2s ease-in-out;
+}
+.portfolio-card__info__icon-n {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+.portfolio-card__info__separator {
+  border-right: 0.1875rem solid var(--pink);
+  margin-right: 0.5rem;
+  margin-left: 0.25rem;
+}
+
+.project {
+  background-size: cover;
+  background-position: center;
+}
+.project-icons a:nth-of-type(1) {
+  margin-right: 0.25rem;
+}
+.project-icons a:nth-of-type(4) {
+  margin-left: 0.125rem;
+}
+.project-icons a:nth-of-type(5) {
+  margin-left: 0.3125rem;
+  width: 1.5625rem;
+  height: 1.5625rem;
+}
+.project-icons a:nth-of-type(6) {
+  margin-left: 0.5rem;
+  width: 1.5625rem;
+  height: 1.5625rem;
+}
+
+.thumbnail1 {
+  background-image: url("https://user-images.githubusercontent.com/47509295/180346891-a7081011-5457-4bf5-b4a0-06e003f499a1.png");
+}
+
+.thumbnail2 {
+  background-image: url("https://user-images.githubusercontent.com/47509295/181582028-94c58f1e-0907-42a2-821f-ecd4007e8abb.png");
+}
+
+.thumbnail3 {
+  background-image: url("https://user-images.githubusercontent.com/47509295/204004995-38dd33f2-f2fa-4a8e-a45c-c1f70ee314d7.png");
+}
+
+.thumbnail4 {
+  background-image: url("https://user-images.githubusercontent.com/47509295/202753103-71de50c7-932b-4601-810e-e2fcea9bb2ef.png");
+}
+
+.thumbnail5 {
+  background-image: url("https://user-images.githubusercontent.com/47509295/188201062-cf9846c7-d546-4905-b8aa-394acb5f3fa8.png");
+}
+
+.thumbnail6 {
+  background-image: url("https://user-images.githubusercontent.com/47509295/209034490-77b8eb7b-553a-4a2a-949e-f368ad1c749d.png");
+}
+
+.exit-icon {
+  max-height: 2rem;
 }
 
 [tooltip] {
