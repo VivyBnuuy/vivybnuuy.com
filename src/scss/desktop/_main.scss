@@ -443,6 +443,13 @@ body {
     background-image: url("../../../assets/images/podlandingbg.webp");
 }
 
+.thumbnail7 {
+    background-image: url("../../../assets/images/bentogrid.webp");
+
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+
 .exit-icon {
     max-height: util.rem(32);
 }
