@@ -110,7 +110,7 @@ body to {
   min-width: fit-content;
   min-height: 100vh;
   background-color: rgb(255, 153, 190);
-  background-image: url(../../../assets/images/background.png), radial-gradient(circle, rgb(255, 153, 190) 0%, rgb(65, 42, 127) 60%);
+  background-image: url(../../../assets/images/background.webp), radial-gradient(circle, rgb(255, 153, 190) 0%, rgb(65, 42, 127) 60%);
   background-repeat: no-repeat;
   background-position-x: 50%;
 }
