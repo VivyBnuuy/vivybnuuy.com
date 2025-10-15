@@ -141,6 +141,10 @@ body {
         background: linear-gradient(0.25turn, var(--bluesky1), var(--bluesky2) 80%);
     }
 
+    &__commissions {
+        background: linear-gradient(0.25turn, var(--commissions1), var(--commissions2) 80%);
+    }
+
     &__discord {
         background: linear-gradient(0.25turn, var(--discord1), var(--discord2) 80%);
     }
