@@ -124,6 +124,7 @@ body {
         font-size: fonts.$button;
         font-weight: fonts.$bold;
         letter-spacing: util.rem(1);
+        color: var(--white);
     
         -webkit-text-stroke-width: util.rem(1.2);
         -webkit-text-stroke-color: var(--white);

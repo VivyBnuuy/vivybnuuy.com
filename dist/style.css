@@ -21,10 +21,14 @@
   --portfolio2: rgb(255, 46, 122);
 }
 
+/*
 @font-face {
-  font-family: "Mulish";
-  src: local("Mulish"), url("../../../assets/fonts/Mulish/mulish-variablefont_wght-webfont.woff2") format("woff2");
-}
+    font-family: "Mulish";
+    src:
+      local("Mulish"),
+      url("../../../assets/fonts/Roboto/Roboto-VariableFont_wdth_wght.ttf");
+  }
+  */
 .buttons:hover {
   scale: 105%;
   cursor: pointer;
@@ -181,6 +185,7 @@ body to {
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.0625rem;
+  color: var(--white);
   -webkit-text-stroke-width: 0.075rem;
   -webkit-text-stroke-color: var(--white);
 }
@@ -515,4 +520,4 @@ body to {
   .links-container {
     width: 20rem;
   }
-}
+}/*# sourceMappingURL=style.css.map */
