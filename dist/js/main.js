@@ -27,10 +27,11 @@ function buttonListeners() {
 function showTarget(source) {
     let clickedElement = source.currentTarget;
 
+    window.scrollTo({top: 0, behavior: "smooth"});
+    
     switch(true) {
         // Commissions
         case (clickedElement.className == "buttons buttons__commissions"):
-            window.scrollTo({top: 0, behavior: "smooth"});
             cardElement.style.animationName = "fade-out";
 
             setTimeout(function() {
@@ -42,7 +43,6 @@ function showTarget(source) {
 
         // Portfolio
         case (clickedElement.className == "buttons buttons__portfolio"):
-            window.scrollTo({top: 0, behavior: "smooth"});
             cardElement.style.animationName = "fade-out";
 
             setTimeout(function() {
