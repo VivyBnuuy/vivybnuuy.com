@@ -58,14 +58,24 @@ function closeTarget(source) {
     switch(true) {
         // Commissions
         case (clickedElement.className == "commissions-card__info__links exit-icon"):
-            commissionsElement.style = "display: none;";
-            cardElement.style = "display: grid;";
+            commissionsElement.style.animationName = "fade-out";
+
+            setTimeout(function() {
+                commissionsElement.style = "display: none;";
+                cardElement.style = "display: grid;";
+                cardElement.style.animationName = "fade-in";
+            }, 500);
             break;
 
         // Portfolio    
         case (clickedElement.className == "portfolio-card__info__links exit-icon"):
-            portfolioElement.style = "display: none;";
-            cardElement.style = "display: grid;";
+            portfolioElement.style.animationName = "fade-out";
+
+            setTimeout(function() {
+                portfolioElement.style = "display: none;";
+                cardElement.style = "display: grid;";
+                cardElement.style.animationName = "fade-in";
+            }, 500);
     }
 }
 

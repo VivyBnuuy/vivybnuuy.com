@@ -292,6 +292,10 @@ body {
     background-color: rgba(0, 0, 0, 0.300);
     backdrop-filter: blur(util.rem(64));
 
+    animation-duration: 0.5s;
+    animation-name: unset;
+    animation-fill-mode: forwards;
+
     &__top {
         display: grid;
         grid-template: auto / auto;

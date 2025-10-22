@@ -332,6 +332,9 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
   -webkit-backdrop-filter: blur(4rem);
           backdrop-filter: blur(4rem);
+  animation-duration: 0.5s;
+  animation-name: unset;
+  animation-fill-mode: forwards;
 }
 .portfolio__top {
   display: grid;
