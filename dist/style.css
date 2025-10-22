@@ -323,16 +323,18 @@ body to {
 }
 .portfolio__top {
   display: grid;
-  grid-template: auto/1fr auto;
+  grid-template: auto/auto;
   min-width: 100%;
   padding: 1rem 1rem 0;
 }
 .portfolio__top__icon {
+  grid-area: 1/1/2/2;
   width: 2rem;
   height: 2rem;
   transition: all 0.2s ease-in-out;
 }
 .portfolio__top__header {
+  grid-area: 1/1/2/2;
   justify-self: center;
   margin: 1rem 2rem 0;
   font-size: 4rem;
@@ -469,6 +471,8 @@ body to {
 }
 
 .exit-icon {
+  grid-area: 1/1/2/2;
+  justify-self: end;
   max-height: 2rem;
 }
 
@@ -519,7 +523,8 @@ body to {
 }
 .commissions__top {
   display: grid;
-  grid-template: auto/1fr auto;
+  grid-area: 1/1/2/2;
+  grid-template: auto/auto;
   min-width: 100%;
   padding: 1rem 1rem 0;
 }
@@ -529,6 +534,7 @@ body to {
   transition: all 0.2s ease-in-out;
 }
 .commissions__top__header {
+  grid-area: 1/1/2/2;
   justify-self: center;
   margin: 1rem 2rem 0;
   font-size: 4rem;
