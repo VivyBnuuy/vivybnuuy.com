@@ -79,4 +79,5 @@ function closeTarget(source) {
     }
 }
 
+// Add event listeners on page load
 document.onload = buttonListeners();

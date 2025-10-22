@@ -114,15 +114,14 @@ body {
   animation-duration: 3s;
   animation-name: fade-in;
   animation-fill-mode: forwards;
+  display: grid;
+  grid-template: auto/auto;
 }
 
 .background {
-  display: block;
   z-index: -1;
-  height: 118.9375rem;
-  width: 100%;
-  position: absolute;
-  top: -9.375rem;
+  grid-area: 1/1/2/2;
+  min-height: 109.5625rem;
   background-color: rgb(255, 153, 190);
   background-image: radial-gradient(circle, rgb(255, 153, 190) 0%, rgb(65, 42, 127) 60%);
   background-repeat: no-repeat;
@@ -132,6 +131,7 @@ body {
   display: grid;
   align-items: center;
   justify-content: center;
+  grid-area: 1/1/2/2;
   min-width: -moz-fit-content;
   min-width: fit-content;
   min-height: 100vh;
