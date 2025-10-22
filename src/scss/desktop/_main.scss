@@ -24,7 +24,8 @@ body {
     background-image: radial-gradient(circle, rgba(255,153,190,1) 0%, rgba(65,42,127,1) 60%);
     background-repeat: no-repeat;
 
-    background-size: 100% 1753px;
+    background-size: 100% util.rem(1903);
+    background-position-y: util.rem(-150);
 }
 
 .wrapper {

@@ -124,7 +124,8 @@ body {
   background-color: rgb(255, 153, 190);
   background-image: radial-gradient(circle, rgb(255, 153, 190) 0%, rgb(65, 42, 127) 60%);
   background-repeat: no-repeat;
-  background-size: 100% 1753px;
+  background-size: 100% 118.9375rem;
+  background-position-y: -9.375rem;
 }
 
 .wrapper {
