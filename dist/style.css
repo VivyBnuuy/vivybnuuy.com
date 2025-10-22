@@ -121,10 +121,10 @@ body {
 .background {
   z-index: -1;
   grid-area: 1/1/2/2;
-  min-height: 109.5625rem;
   background-color: rgb(255, 153, 190);
   background-image: radial-gradient(circle, rgb(255, 153, 190) 0%, rgb(65, 42, 127) 60%);
   background-repeat: no-repeat;
+  background-size: 100% 1753px;
 }
 
 .wrapper {

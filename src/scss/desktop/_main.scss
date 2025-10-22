@@ -19,12 +19,12 @@ body {
     z-index: -1;
 
     grid-area: 1/1/2/2;
-    
-    min-height: util.rem(1753);
 
     background-color: rgba(255,153,190,1);
     background-image: radial-gradient(circle, rgba(255,153,190,1) 0%, rgba(65,42,127,1) 60%);
     background-repeat: no-repeat;
+
+    background-size: 100% 1753px;
 }
 
 .wrapper {
