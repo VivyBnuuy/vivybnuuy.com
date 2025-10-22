@@ -116,16 +116,26 @@ body {
   animation-fill-mode: forwards;
 }
 
+.background {
+  display: block;
+  z-index: -1;
+  height: 118.9375rem;
+  width: 100%;
+  position: absolute;
+  top: -9.375rem;
+  background-color: rgb(255, 153, 190);
+  background-image: radial-gradient(circle, rgb(255, 153, 190) 0%, rgb(65, 42, 127) 60%);
+  background-repeat: no-repeat;
+}
+
 .wrapper {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   align-items: center;
   justify-content: center;
   min-width: -moz-fit-content;
   min-width: fit-content;
   min-height: 100vh;
-  background-color: rgb(255, 153, 190);
-  background-image: url(../../../assets/images/background.webp), radial-gradient(circle, rgb(255, 153, 190) 0%, rgb(65, 42, 127) 60%);
+  background-image: url(../../../assets/images/background.webp);
   background-repeat: no-repeat;
   background-position-x: 50%;
 }

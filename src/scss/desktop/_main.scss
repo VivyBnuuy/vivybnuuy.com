@@ -12,17 +12,30 @@ body {
     animation-fill-mode: forwards;
 }
 
+.background {
+    display: block;
+    z-index: -1;
+
+    height: util.rem(1903);
+    width: 100%;
+
+    position: absolute;
+    top: util.rem(-150);
+
+    background-color: rgba(255,153,190,1);
+    background-image: radial-gradient(circle, rgba(255,153,190,1) 0%, rgba(65,42,127,1) 60%);
+    background-repeat: no-repeat;
+}
+
 .wrapper {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     align-items: center;
     justify-content: center;
 
     min-width: fit-content;
     min-height: 100vh;
 
-    background-color: rgb(255,153,190);
-    background-image: url(../../../assets/images/background.webp), radial-gradient(circle, rgba(255,153,190,1) 0%, rgba(65,42,127,1) 60%);
+    background-image: url(../../../assets/images/background.webp);
     background-repeat: no-repeat;
     background-position-x: 50%;
 }
