@@ -3,23 +3,13 @@
 @use "../global/typography" as fonts;
 
 body {
-   
     font-family: "Mulish";
 
     background-color: var(--black);
 
     animation-duration: 3s;
     animation-name: fade-in;
-
-    @keyframes fade-in {
-        from {
-            opacity: 0%;
-        }
-    }
-
-    to {
-        opacity: 100%;
-    }
+    animation-fill-mode: forwards;
 }
 
 .wrapper {
@@ -46,6 +36,10 @@ body {
 }
 
 .contents {
+    animation-duration: 0.5s;
+    animation-name: unset;
+    animation-fill-mode: forwards;
+
     display: grid;
     justify-items: center;
 
@@ -552,6 +546,10 @@ body {
 .commissions {
     display: none;
     justify-items: center;
+
+    animation-duration: 0.5s;
+    animation-name: unset;
+    animation-fill-mode: forwards;
 
     border-radius: util.rem(32);
 

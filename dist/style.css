@@ -92,19 +92,28 @@ video {
   max-width: 100%;
 }
 
+@keyframes fade-in {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+@keyframes fade-out {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
 body {
   font-family: "Mulish";
   background-color: var(--black);
   animation-duration: 3s;
   animation-name: fade-in;
-}
-@keyframes fade-in {
-  from {
-    opacity: 0%;
-  }
-}
-body to {
-  opacity: 100%;
+  animation-fill-mode: forwards;
 }
 
 .wrapper {
@@ -129,6 +138,9 @@ body to {
 }
 
 .contents {
+  animation-duration: 0.5s;
+  animation-name: unset;
+  animation-fill-mode: forwards;
   display: grid;
   justify-items: center;
   padding: 2rem 3rem;
@@ -515,6 +527,9 @@ body to {
 .commissions {
   display: none;
   justify-items: center;
+  animation-duration: 0.5s;
+  animation-name: unset;
+  animation-fill-mode: forwards;
   border-radius: 2rem;
   box-shadow: 0 0.625rem 0.5rem 0 rgba(0, 0, 0, 0.4);
   background-color: rgba(0, 0, 0, 0.3);
