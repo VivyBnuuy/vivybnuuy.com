@@ -6,11 +6,12 @@ let cardElement = document.getElementsByClassName("contents")[0];
 
 // Get button element classes
 let portfolioButtonElement = document.getElementsByClassName("buttons__portfolio")[0];
-let portfolioCloseEelemnent = document.getElementsByClassName("exit-icon")[0];
+let commissionslioCloseEelemnent = document.getElementsByClassName("exit-icon")[0];
+let portfolioCloseElement = document.getElementsByClassName("exit-icon")[1];
 
 function buttonListeners() {
     portfolioButtonElement.addEventListener("click", showPortfolio);
-    portfolioCloseEelemnent.addEventListener("click", closePortfolio);
+    portfolioCloseElement.addEventListener("click", closePortfolio);
 }
 
 function showPortfolio() {

@@ -42,11 +42,11 @@
   -webkit-text-stroke-color: var(--light-pink);
 }
 
-.portfolio__top__icon:hover {
+.portfolio__top__icon:hover, .commissions__top__icon:hover {
   scale: 120%;
   cursor: pointer;
 }
-.portfolio-card__info__icon:hover {
+.portfolio-card__info__icon:hover, .commissions-card__info__icon:hover {
   scale: 115%;
   cursor: pointer;
 }
@@ -508,6 +508,46 @@ body to {
   box-shadow: 0 0.125rem 0.5rem 0 rgba(0, 0, 0, 0.4);
 }
 
+.commissions {
+  display: none;
+  justify-items: center;
+  border-radius: 2rem;
+  box-shadow: 0 0.625rem 0.5rem 0 rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(4rem);
+          backdrop-filter: blur(4rem);
+}
+.commissions__top {
+  display: grid;
+  grid-template: auto/1fr auto;
+  min-width: 100%;
+  padding: 1rem 1rem 0;
+}
+.commissions__top__icon {
+  width: 2rem;
+  height: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+.commissions__top__header {
+  justify-self: center;
+  margin: 1rem 2rem 0;
+  font-size: 4rem;
+  font-weight: 700;
+  -webkit-text-stroke-width: 0.1875rem;
+  -webkit-text-stroke-color: var(--white);
+}
+.commissions__contents {
+  display: grid;
+  grid-template: auto/repeat(3, 1fr);
+  grid-gap: 1.5rem;
+  padding: 1rem 3rem 3.25rem;
+}
+.commissions__contents__art {
+  display: none;
+}
+.commissions__contents__webdev {
+  display: none;
+}
 @media screen and (max-width: 1190px) {
   .exit-icon::after {
     transform: translateX(-85%) translateY(-100%);
