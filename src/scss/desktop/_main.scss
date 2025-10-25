@@ -15,22 +15,8 @@ body {
     grid-template: auto/auto;
 }
 
-.background {
-    z-index: -1;
-
-    grid-area: 1/1/2/2;
-
-    background-color: rgba(255,153,190,1);
-    background-image: radial-gradient(circle, rgba(255,153,190,1) 0%, rgba(65,42,127,1) 60%);
-    background-repeat: no-repeat;
-
-    background-size: 100% util.rem(1903);
-    background-position-y: util.rem(-150);
-}
-
 .wrapper {
     display: grid;
-    align-items: center;
     justify-content: center;
     grid-area: 1/1/2/2;
 
@@ -38,6 +24,7 @@ body {
     min-height: 100vh;
 
     background-image: url(../../../assets/images/background.webp);
+    background-color: rgba(65,42,127,1);
     background-repeat: no-repeat;
     background-position-x: 50%;
 }
@@ -102,7 +89,7 @@ body {
         max-width: util.rem(400);
 
         &-comms {
-            display: none;
+            display: grid;
             grid-template: max-content/auto auto auto;
 
             margin-top: util.rem(24);
@@ -188,7 +175,6 @@ body {
     }
 
     &__commissions {
-        display: none;
         background: linear-gradient(0.25turn, var(--commissions1), var(--commissions2) 80%);
 
         margin-top: 1.5rem;
@@ -609,8 +595,6 @@ body {
 
     &__contents {
         display: grid;
-        grid-template: auto / repeat(3, 1fr);
-        grid-gap: util.rem(24);
 
         padding: util.rem(16) util.rem(48) util.rem(52);
 
@@ -624,8 +608,10 @@ body {
     }
 
     &__categories {
-        &__webdev-button {
+        display: grid;
 
+        &__webdev-button {
+            
         }
 
         &__art-button {

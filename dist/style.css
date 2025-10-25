@@ -118,25 +118,15 @@ body {
   grid-template: auto/auto;
 }
 
-.background {
-  z-index: -1;
-  grid-area: 1/1/2/2;
-  background-color: rgb(255, 153, 190);
-  background-image: radial-gradient(circle, rgb(255, 153, 190) 0%, rgb(65, 42, 127) 60%);
-  background-repeat: no-repeat;
-  background-size: 100% 118.9375rem;
-  background-position-y: -9.375rem;
-}
-
 .wrapper {
   display: grid;
-  align-items: center;
   justify-content: center;
   grid-area: 1/1/2/2;
   min-width: -moz-fit-content;
   min-width: fit-content;
   min-height: 100vh;
   background-image: url(../../../assets/images/background.webp);
+  background-color: rgb(65, 42, 127);
   background-repeat: no-repeat;
   background-position-x: 50%;
 }
@@ -187,7 +177,7 @@ body {
   max-width: 25rem;
 }
 .contents__paragraph-comms {
-  display: none;
+  display: grid;
   grid-template: max-content/auto auto auto;
   margin-top: 1.5rem;
 }
@@ -249,7 +239,6 @@ body {
   background: linear-gradient(0.25turn, var(--bluesky1), var(--bluesky2) 80%);
 }
 .buttons__commissions {
-  display: none;
   background: linear-gradient(0.25turn, var(--commissions1), var(--commissions2) 80%);
   margin-top: 1.5rem;
 }
@@ -574,8 +563,6 @@ body {
 }
 .commissions__contents {
   display: grid;
-  grid-template: auto/repeat(3, 1fr);
-  grid-gap: 1.5rem;
   padding: 1rem 3rem 3.25rem;
 }
 .commissions__contents__art {
@@ -583,6 +570,9 @@ body {
 }
 .commissions__contents__webdev {
   display: none;
+}
+.commissions__categories {
+  display: grid;
 }
 @media screen and (max-width: 1190px) {
   .exit-icon::after {
