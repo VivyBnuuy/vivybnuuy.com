@@ -8,6 +8,21 @@
     cursor: pointer;
 }
 
+.buttons__comms {
+
+    &-stream:hover {
+        scale: 100%;
+
+        cursor:not-allowed;
+    }
+
+    &-art:hover {
+        scale: 100%;
+
+        cursor:not-allowed;
+    }
+}
+
 .link:hover{
     color: var(--light-pink);
 

@@ -23,6 +23,8 @@
   --portfolio2: rgb(255, 46, 122);
   --artcomms1: rgb(233, 128, 42);
   --artcomms2: rgb(201, 98, 2);
+  --disabled1: rgb(100, 100, 100);
+  --disabled2: rgb(68, 68, 68);
 }
 
 /*
@@ -36,6 +38,15 @@
 .buttons:hover {
   scale: 105%;
   cursor: pointer;
+}
+
+.buttons__comms-stream:hover {
+  scale: 100%;
+  cursor: not-allowed;
+}
+.buttons__comms-art:hover {
+  scale: 100%;
+  cursor: not-allowed;
 }
 
 .link:hover {
@@ -266,10 +277,16 @@ body {
   background: linear-gradient(0.25turn, var(--twitch1), var(--twitch2) 80%);
 }
 .buttons__comms-art {
-  background: linear-gradient(0.25turn, var(--artcomms1), var(--artcomms2) 80%);
+  background: linear-gradient(0.25turn, var(--disabled1), var(--disabled2) 80%);
 }
 .buttons__comms-webdev {
   background: linear-gradient(0.25turn, var(--portfolio1), var(--portfolio2) 80%);
+}
+.buttons__comms-stream {
+  background: linear-gradient(0.25turn, var(--disabled1), var(--disabled2) 80%);
+}
+.buttons__disabled {
+  background: linear-gradient(0.25turn, var(--disabled1), var(--disabled2) 80%);
 }
 .buttons-category {
   display: grid;
@@ -590,9 +607,6 @@ body {
   max-width: 25rem;
 }
 .commissions__contents__paragraph:nth-of-type(2) {
-  margin-top: 1.5rem;
-}
-.commissions__contents__paragraph:nth-of-type(3) {
   margin-top: 1.5rem;
 }
 .commissions__contents__list {

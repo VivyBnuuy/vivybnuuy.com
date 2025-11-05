@@ -209,11 +209,21 @@ body {
     }
 
     &__comms-art {
-        background: linear-gradient(0.25turn, var(--artcomms1), var(--artcomms2) 80%);
+        //background: linear-gradient(0.25turn, var(--artcomms1), var(--artcomms2) 80%);
+        background: linear-gradient(0.25turn, var(--disabled1), var(--disabled2) 80%);
     }
 
     &__comms-webdev {
         background: linear-gradient(0.25turn, var(--portfolio1), var(--portfolio2) 80%);
+    }
+
+    &__comms-stream {
+        //background: linear-gradient(0.25turn, var(--twitch1), var(--twitch2) 80%);
+        background: linear-gradient(0.25turn, var(--disabled1), var(--disabled2) 80%);
+    }
+
+    &__disabled {
+        background: linear-gradient(0.25turn, var(--disabled1), var(--disabled2) 80%);
     }
 
     &-category {
@@ -632,10 +642,6 @@ body {
             max-width: util.rem(400);
 
             &:nth-of-type(2) {
-                margin-top: util.rem(24);
-            }
-
-            &:nth-of-type(3) {
                 margin-top: util.rem(24);
             }
         }
