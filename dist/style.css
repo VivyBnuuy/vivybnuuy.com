@@ -591,7 +591,7 @@ body {
 }
 .commissions__links {
   justify-self: center;
-  width: 25rem;
+  width: 100%;
 }
 .commissions__contents {
   display: grid;
@@ -610,6 +610,7 @@ body {
   margin-top: 1.5rem;
 }
 .commissions__contents__list {
+  display: grid;
   list-style-position: inside;
   margin-top: 1.5rem;
   font-size: 1.375rem;
@@ -621,9 +622,7 @@ body {
 .commissions__contents__webdev {
   display: none;
 }
-.commissions__categories {
-  display: grid;
-}
+
 @media screen and (max-width: 1190px) {
   .exit-icon::after {
     transform: translateX(-85%) translateY(-100%);
@@ -665,5 +664,18 @@ body {
   }
   .links-container {
     width: 20rem;
+  }
+  .commissions__top__header {
+    font-size: 3rem;
+  }
+  .commissions__contents {
+    max-width: 20rem;
+    padding: 0 0 2rem;
+  }
+  .commissions__contents__paragraph {
+    font-size: 1.125rem;
+  }
+  .commissions__contents__list {
+    font-size: 1.125rem;
   }
 }/*# sourceMappingURL=style.css.map */
