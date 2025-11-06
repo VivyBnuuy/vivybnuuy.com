@@ -27,14 +27,10 @@
   --disabled2: rgb(68, 68, 68);
 }
 
-/*
 @font-face {
-    font-family: "Mulish";
-    src:
-      local("Mulish"),
-      url("../../../assets/fonts/Roboto/Roboto-VariableFont_wdth_wght.ttf");
-  }
-  */
+  font-family: "Mulish";
+  src: url("../../../assets/fonts/Mulish/Mulish-VariableFont_wght.ttf");
+}
 .buttons:hover {
   scale: 105%;
   cursor: pointer;
