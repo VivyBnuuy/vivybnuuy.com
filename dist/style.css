@@ -1,8 +1,10 @@
 :root {
   --pink: rgb(255, 153, 190);
+  --pink-a: rgba(255, 153, 190, 0.7);
   --white: rgb(255, 255, 255);
   --black: rgb(0, 0, 0);
   --light-pink: rgb(255, 198, 220);
+  --background: rgba(65,42,127);
   --kofi1: rgb(255, 90, 22);
   --kofi2: rgb(204, 61, 0);
   --bluesky1: rgb(0, 133, 255);
@@ -143,7 +145,7 @@ body {
   min-width: fit-content;
   min-height: 100vh;
   background-image: url(../../../assets/images/background.webp);
-  background-color: rgb(65, 42, 127);
+  background-color: var(--background);
   background-repeat: repeat-y;
   background-position-x: 50%;
 }
@@ -564,6 +566,8 @@ body {
 .commissions {
   display: none;
   justify-items: center;
+  max-height: 1250rem;
+  transition: max-height 200ms ease-in-out;
   animation-duration: 0.5s;
   animation-name: unset;
   animation-fill-mode: forwards;
@@ -733,10 +737,77 @@ body {
   -webkit-text-stroke-width: 0.1875rem;
   -webkit-text-stroke-color: var(--white);
 }
+.webdev__header {
+  grid-area: 1/1/2/2;
+  margin: 2rem 0;
+}
 .webdev__contents {
   display: grid;
   align-content: center;
   padding: 0 3rem 2rem;
+}
+.webdev__cards__container {
+  display: grid;
+  grid-column-gap: 2.25rem;
+  grid-template: repeat(2, auto)/repeat(3, 18.75rem);
+}
+.webdev__card {
+  display: grid;
+  grid-template: repeat(3, max-content)/auto;
+  border-color: var(--pink-a);
+  border-style: solid;
+  border-width: 0.1875rem;
+  border-radius: 2rem;
+  padding: 1rem 1.5rem 1.5rem;
+  font-size: 1.375rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 0.25rem 0 rgba(0, 0, 0, 0.4);
+}
+.webdev__card__header {
+  font-size: 1.75rem;
+  font-weight: 700;
+  padding: 0 0 0.5rem 0;
+}
+.webdev__card__paragraph {
+  grid-area: 2/1/3/3;
+}
+.webdev__card__pricing {
+  display: grid;
+}
+.webdev__card__pricing__price {
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.webdev__card__pricing__interval {
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 1.125rem;
+}
+.webdev__card__pricing::after {
+  content: " ";
+  display: block;
+  border-bottom: 0.1875rem solid var(--pink);
+  padding: 1rem 0;
+  grid-area: 3/1/4/3;
+}
+.webdev__card__list {
+  margin: 1rem 0 0 0;
+  list-style-position: inside;
+  list-style-type: disc;
+  text-indent: -1.125rem;
+  margin-left: 1.25rem;
+}
+.webdev__card__list__category {
+  list-style-type: none;
+  font-weight: 700;
+  font-size: 1.375rem;
+  margin: 0.75rem 0;
+}
+.webdev__card__list__item {
+  font-size: 1.125rem;
+  margin: 0 0 0.25rem 0.25rem;
 }
 
 @media screen and (max-width: 1190px) {

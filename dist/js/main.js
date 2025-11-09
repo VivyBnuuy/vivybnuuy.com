@@ -49,7 +49,8 @@ function toggleTermsCategory(source) {
 
     if (categoryState.getPropertyValue("display") == "none") {
         clickedElement.nextElementSibling.style = "display: block";
-        chevron.style = "rotate: 180deg";        
+        chevron.style = "rotate: 180deg";   
+           
     } else {
         clickedElement.nextElementSibling.style.animationName = "fade-out";
         chevron.style = "rotate: 0deg";
