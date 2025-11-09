@@ -656,6 +656,7 @@ body {
   }
   .contents__paragraph {
     font-size: 1.125rem;
+    line-height: 1.5rem;
     max-width: 20rem;
   }
   .links-container {
@@ -670,6 +671,7 @@ body {
   }
   .commissions__contents__paragraph {
     font-size: 1.125rem;
+    line-height: 1.5rem;
   }
   .commissions__contents__list {
     font-size: 1.125rem;

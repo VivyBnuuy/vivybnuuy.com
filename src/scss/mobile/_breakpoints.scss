@@ -37,6 +37,7 @@
 
         &__paragraph {
             font-size: fonts.$paragraph-m;
+            line-height: util.rem(24);
             max-width: util.rem(320);
         }
     }
@@ -54,6 +55,7 @@
 
         &__paragraph {
             font-size: util.rem(18);
+            line-height: util.rem(24);
         }
 
         &__list {
