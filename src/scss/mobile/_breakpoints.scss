@@ -49,6 +49,7 @@
     .commissions__top__header {
         font-size: util.rem(48);
     }
+
     .commissions__contents {
         max-width: util.rem(320);
         padding: 0 0 util.rem(32);
@@ -60,6 +61,18 @@
 
         &__list {
             font-size: util.rem(18);
+        }
+    }
+
+    .commissions__tos {
+        &__paragraph {
+            font-size: util.rem(18);
+            line-height: util.rem(28);
+        }
+
+        &__section {
+            font-size: util.rem(18);
+            line-height: util.rem(28);
         }
     }
 

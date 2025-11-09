@@ -10,13 +10,7 @@
 
 .buttons__comms {
 
-    &-stream:hover {
-        scale: 100%;
-
-        cursor:not-allowed;
-    }
-
-    &-art:hover {
+    &-stream:hover, &-art:hover {
         scale: 100%;
 
         cursor:not-allowed;
@@ -49,4 +43,17 @@
 
     transition: all 0.2s ease-in-out;
     transition-delay: 0.3s;
+}
+
+.commissions__tos__section__header:hover {
+    cursor: pointer;
+
+    color: var(--light-pink);
+
+    -webkit-text-stroke-width: util.rem(1.2);
+    -webkit-text-stroke-color: var(--light-pink);
+
+    & .commissions__chevron {
+        filter: brightness(0) saturate(100%) invert(81%) sepia(4%) saturate(1868%) hue-rotate(287deg) brightness(102%) contrast(98%);
+    }
 }

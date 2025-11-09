@@ -36,11 +36,7 @@
   cursor: pointer;
 }
 
-.buttons__comms-stream:hover {
-  scale: 100%;
-  cursor: not-allowed;
-}
-.buttons__comms-art:hover {
+.buttons__comms-stream:hover, .buttons__comms-art:hover {
   scale: 100%;
   cursor: not-allowed;
 }
@@ -65,6 +61,16 @@
   opacity: 100%;
   transition: all 0.2s ease-in-out;
   transition-delay: 0.3s;
+}
+
+.commissions__tos__section__header:hover {
+  cursor: pointer;
+  color: var(--light-pink);
+  -webkit-text-stroke-width: 0.075rem;
+  -webkit-text-stroke-color: var(--light-pink);
+}
+.commissions__tos__section__header:hover .commissions__chevron {
+  filter: brightness(0) saturate(100%) invert(81%) sepia(4%) saturate(1868%) hue-rotate(287deg) brightness(102%) contrast(98%);
 }
 
 /* makes sizing simpler */
@@ -618,6 +624,62 @@ body {
 .commissions__contents__webdev {
   display: none;
 }
+.commissions__tos__categories {
+  display: grid;
+  justify-self: center;
+  font-size: 1.375rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 2rem;
+  padding: 0.5rem 0 0 0;
+  max-width: 25rem;
+  width: 100%;
+  grid-template: auto/auto;
+  grid-row-gap: 0.75rem;
+}
+.commissions__tos__header {
+  display: block;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  text-transform: uppercase;
+  padding: 0 0 1rem 0;
+}
+.commissions__tos__paragraph {
+  display: grid;
+  justify-self: center;
+  font-size: 1.375rem;
+  font-weight: 700;
+  text-align: left;
+  line-height: 2rem;
+  padding: 0 0 1.5rem 0;
+  max-width: 25rem;
+  width: 100%;
+}
+.commissions__tos__section {
+  display: none;
+  text-align: left;
+  padding: 0 0 1.5rem 0;
+}
+.commissions__tos__section__header {
+  display: grid;
+  grid-template: auto/repeat(2, max-content);
+  justify-self: start;
+  font-size: 1.5rem;
+  -webkit-text-stroke-width: 0.0625rem;
+  -webkit-text-stroke-color: var(--white);
+  transition: all 0.2s ease-in-out;
+}
+.commissions__tos__section__paragraph {
+  padding: 1.5rem 0 0 0;
+}
+.commissions__chevron {
+  align-self: center;
+  max-height: 1.5rem;
+  max-width: 1.5rem;
+  margin: 0 0 0 1.5rem;
+  transition: all 0.2s ease-in-out;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(9%) saturate(840%) hue-rotate(312deg) brightness(112%) contrast(107%);
+}
 
 @media screen and (max-width: 1190px) {
   .exit-icon::after {
@@ -675,6 +737,14 @@ body {
   }
   .commissions__contents__list {
     font-size: 1.125rem;
+  }
+  .commissions__tos__paragraph {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  .commissions__tos__section {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
   .contents__paragraph-comms__star:nth-of-type(1) {
     margin-left: 0;
