@@ -11,16 +11,25 @@ let portfolioButtonElement = document.getElementsByClassName("buttons__portfolio
 
 // Get close icon element classes
 let commissionsCloseElement = document.getElementsByClassName("exit-icon")[0];
-let portfolioCloseElement = document.getElementsByClassName("exit-icon")[1];
+let webCommissionsCloseElement = document.getElementsByClassName("exit-icon")[1];
+let portfolioCloseElement = document.getElementsByClassName("exit-icon")[2];
 
 // Get Terms of Service element classes
 let tosCategoryHeaders = document.getElementsByClassName("commissions__tos__section__header");
 let tosCategoryContents = document.getElementsByClassName("commissions__tos__section");
 
+// Get Web Dev Commissions element classes
+let webCommissionsElement = document.getElementsByClassName("webdev")[0];
+let webCommissionsButton = document.getElementsByClassName("buttons__comms-webdev")[0];
+
 function buttonListeners() {
     // Commissions
     commissionsButtonElement.addEventListener("click", showTarget);
     commissionsCloseElement.addEventListener("click", closeTarget);
+
+    // Web Dev Commissions
+    webCommissionsButton.addEventListener("click", showTarget);
+    webCommissionsCloseElement.addEventListener("click", closeTarget);
 
     // Portfolio
     portfolioButtonElement.addEventListener("click", showTarget);
@@ -69,6 +78,17 @@ function showTarget(source) {
             }, 500);
             break;
 
+        // Web Dev Commissions
+        case (clickedElement.className == "buttons buttons__comms-webdev"):
+            commissionsElement.style.animationName = "fade-out";
+
+            setTimeout(function() {
+                commissionsElement.style = "display: none;";
+                webCommissionsElement.style = "display: grid";
+                webCommissionsElement.style.animationName = "fade-in";
+            }, 500);
+            break;
+
         // Portfolio
         case (clickedElement.className == "buttons buttons__portfolio"):
             cardElement.style.animationName = "fade-out";
@@ -94,6 +114,17 @@ function closeTarget(source) {
                 commissionsElement.style = "display: none;";
                 cardElement.style = "display: grid;";
                 cardElement.style.animationName = "fade-in";
+            }, 500);
+            break;
+
+        // Web Dev Commissions
+        case (clickedElement.className == "webdev-card__info__links exit-icon"):
+            webCommissionsElement.style.animationName = "fade-out";
+
+            setTimeout(function() {
+                webCommissionsElement.style = "display: none;";
+                commissionsElement.style = "display: grid;";
+                commissionsElement.style.animationName = "fade-in";
             }, 500);
             break;
 
