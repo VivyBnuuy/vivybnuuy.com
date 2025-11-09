@@ -25,7 +25,7 @@ body {
 
     background-image: url(../../../assets/images/background.webp);
     background-color: rgba(65,42,127,1);
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-position-x: 50%;
 }
 
@@ -721,6 +721,17 @@ body {
             text-align: left;
 
             padding: 0 0 util.rem(24) 0;
+
+            animation-duration: 0.3s;
+            animation-name: fade-in;
+            animation-fill-mode: forwards;
+
+            &::after {
+                content: " ";
+                display: block;
+                border-bottom: util.rem(3) solid var(--pink);
+                padding: util.rem(36) 0 0 0;
+            }
 
             &__header {
                 display: grid;

@@ -13,6 +13,10 @@ let portfolioButtonElement = document.getElementsByClassName("buttons__portfolio
 let commissionsCloseElement = document.getElementsByClassName("exit-icon")[0];
 let portfolioCloseElement = document.getElementsByClassName("exit-icon")[1];
 
+// Get Terms of Service element classes
+let tosCategoryHeaders = document.getElementsByClassName("commissions__tos__section__header");
+let tosCategoryContents = document.getElementsByClassName("commissions__tos__section");
+
 function buttonListeners() {
     // Commissions
     commissionsButtonElement.addEventListener("click", showTarget);
@@ -21,6 +25,30 @@ function buttonListeners() {
     // Portfolio
     portfolioButtonElement.addEventListener("click", showTarget);
     portfolioCloseElement.addEventListener("click", closeTarget);
+
+    // Terms of Service category headers
+    for (let i = 0; i < 14; i++) {
+        tosCategoryHeaders[i].addEventListener("click", toggleTermsCategory);
+    }
+}
+
+// Toggles Terms of Service categories when header is clicked
+function toggleTermsCategory(source) {
+    let clickedElement = source.currentTarget;
+    let categoryState = (getComputedStyle(clickedElement.nextElementSibling));
+    let chevron = clickedElement.lastElementChild;
+
+    if (categoryState.getPropertyValue("display") == "none") {
+        clickedElement.nextElementSibling.style = "display: block";
+        chevron.style = "rotate: 180deg";        
+    } else {
+        clickedElement.nextElementSibling.style.animationName = "fade-out";
+        chevron.style = "rotate: 0deg";
+
+        setTimeout(function() {
+            clickedElement.nextElementSibling.style = "display: none";  
+        }, 200);
+    }
 }
 
 // Shows website sections depending on which button is clicked

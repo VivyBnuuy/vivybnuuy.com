@@ -144,7 +144,7 @@ body {
   min-height: 100vh;
   background-image: url(../../../assets/images/background.webp);
   background-color: rgb(65, 42, 127);
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-position-x: 50%;
 }
 
@@ -669,6 +669,15 @@ body {
   display: none;
   text-align: left;
   padding: 0 0 1.5rem 0;
+  animation-duration: 0.3s;
+  animation-name: fade-in;
+  animation-fill-mode: forwards;
+}
+.commissions__tos__section::after {
+  content: " ";
+  display: block;
+  border-bottom: 0.1875rem solid var(--pink);
+  padding: 2.25rem 0 0 0;
 }
 .commissions__tos__section__header {
   display: grid;
