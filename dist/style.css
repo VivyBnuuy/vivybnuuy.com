@@ -25,6 +25,8 @@
   --artcomms2: rgb(201, 98, 2);
   --disabled1: rgb(100, 100, 100);
   --disabled2: rgb(68, 68, 68);
+  --tos1: #264db8;
+  --tos2: #13379c;
 }
 
 @font-face {
@@ -289,6 +291,10 @@ body {
 }
 .buttons__disabled {
   background: linear-gradient(0.25turn, var(--disabled1), var(--disabled2) 80%);
+}
+.buttons__tos {
+  background: linear-gradient(0.25turn, var(--tos1), var(--tos2) 80%);
+  margin-bottom: 2rem;
 }
 .buttons-category {
   display: grid;
@@ -644,6 +650,9 @@ body {
   text-decoration: underline;
   text-transform: uppercase;
   padding: 0 0 1rem 0;
+}
+.commissions__tos__download {
+  text-align: center !important;
 }
 .commissions__tos__paragraph {
   display: grid;

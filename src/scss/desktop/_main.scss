@@ -226,6 +226,11 @@ body {
         background: linear-gradient(0.25turn, var(--disabled1), var(--disabled2) 80%);
     }
 
+    &__tos {
+        background: linear-gradient(0.25turn, var(--tos1), var(--tos2) 80%);
+        margin-bottom: util.rem(32);
+    }
+
     &-category {
         display:grid;
         grid-template: 1fr 1fr / 1fr auto 1fr;
@@ -689,6 +694,10 @@ body {
             text-transform: uppercase;
 
             padding: 0 0 util.rem(16) 0;
+        }
+
+        &__download {
+            text-align: center !important; 
         }
 
         &__paragraph {
