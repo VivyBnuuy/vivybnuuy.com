@@ -646,6 +646,8 @@ body {
         &__list {
             display: grid;
 
+            max-width: util.rem(400);
+
             list-style-position: inside;
 
             margin-top: util.rem(24);

@@ -613,6 +613,7 @@ body {
 }
 .commissions__contents__list {
   display: grid;
+  max-width: 25rem;
   list-style-position: inside;
   margin-top: 1.5rem;
   font-size: 1.375rem;
