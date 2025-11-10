@@ -783,6 +783,20 @@ body {
     background-color: rgba(0, 0, 0, 0.300);
     backdrop-filter: blur(util.rem(64));
 
+    &__fineprint {
+        list-style-position: inside;
+        list-style-type: decimal;
+
+        text-indent: util.rem(-18);
+        margin: util.rem(24) 0 0 util.rem(20);
+
+        max-width: util.rem(972);
+
+        & > li {
+            margin: 0 0 util.rem(8) 0;
+        }
+    }
+
     &__top {
         display: grid;
         grid-area: 1/1/2/2;
@@ -903,6 +917,7 @@ body {
 
             &__item {
                 font-size: fonts.$paragraph-m;
+                text-wrap: balance;
 
                 margin: 0 0 util.rem(4) util.rem(4);
             }
