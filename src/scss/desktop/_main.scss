@@ -845,7 +845,37 @@ body {
 
         width: 100%;
 
-        padding: 0 util.rem(48) util.rem(32);
+        padding: 0 util.rem(48);
+
+        &__paragraph {
+            font-size: 1.375rem;
+            font-weight: 700;
+            line-height: 2rem;
+
+            margin: util.rem(24) 0 0 0;
+
+            max-width: util.rem(972);
+
+            &:first-of-type {
+                margin: 0 0;
+            }
+        }
+
+        &__list {
+            font-size: 1.375rem;
+            font-weight: 700;
+            line-height: 2rem;
+
+            margin: util.rem(24) 0 0 0;
+
+            list-style-position: inside;
+            list-style-type: disc;
+
+            text-indent: util.rem(-18);
+            margin-left: util.rem(20);
+
+            max-width: util.rem(972);
+        }
     }
 
     &__support__contents {

@@ -761,7 +761,28 @@ body {
   display: grid;
   align-content: center;
   width: 100%;
-  padding: 0 3rem 2rem;
+  padding: 0 3rem;
+}
+.webdev__custom__contents__paragraph {
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 2rem;
+  margin: 1.5rem 0 0 0;
+  max-width: 60.75rem;
+}
+.webdev__custom__contents__paragraph:first-of-type {
+  margin: 0 0;
+}
+.webdev__custom__contents__list {
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 2rem;
+  margin: 1.5rem 0 0 0;
+  list-style-position: inside;
+  list-style-type: disc;
+  text-indent: -1.125rem;
+  margin-left: 1.25rem;
+  max-width: 60.75rem;
 }
 .webdev__support__contents {
   display: grid;
