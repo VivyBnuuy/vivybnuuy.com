@@ -394,7 +394,8 @@ body {
   -webkit-text-stroke-color: var(--white);
 }
 .portfolio-header {
-  width: 60%;
+  width: 100%;
+  padding: 0 3rem;
 }
 .portfolio__contents {
   display: grid;
@@ -566,8 +567,6 @@ body {
 .commissions {
   display: none;
   justify-items: center;
-  max-height: 1250rem;
-  transition: max-height 200ms ease-in-out;
   animation-duration: 0.5s;
   animation-name: unset;
   animation-fill-mode: forwards;
@@ -868,6 +867,9 @@ body {
 @media screen and (max-width: 760px) {
   .portfolio__contents {
     grid-template: auto/1fr;
+  }
+  .portfolio-header {
+    width: 18.75rem;
   }
   .exit-icon::after {
     transform: translateX(-85%) translateY(-100%);

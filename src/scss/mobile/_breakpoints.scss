@@ -7,6 +7,10 @@
         &__contents {
             grid-template: auto / 1fr;
         }
+
+        &-header {
+            width: util.rem(300);
+        }
     }
 
     .exit-icon::after {

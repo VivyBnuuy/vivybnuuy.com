@@ -352,7 +352,8 @@ body {
     }
 
     &-header {
-        width: 60%;
+        width: 100%;
+        padding: 0 util.rem(48);
     }
 
     &__contents {
@@ -575,9 +576,6 @@ body {
 .commissions {
     display: none;
     justify-items: center;
-
-    max-height: util.rem(20000);
-    transition: max-height 200ms ease-in-out;
 
     animation-duration: 0.5s;
     animation-name: unset;
