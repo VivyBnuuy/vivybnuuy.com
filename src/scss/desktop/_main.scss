@@ -697,6 +697,10 @@ body {
             text-transform: uppercase;
 
             padding: 0 0 util.rem(16) 0;
+
+            &:last-of-type {
+                padding: 0 0 0 0;
+            }
         }
 
         &__download {
@@ -794,6 +798,10 @@ body {
 
         & > li {
             margin: 0 0 util.rem(8) 0;
+
+            &:last-of-type {
+                margin: 0 0;
+            }
         }
     }
 
@@ -831,7 +839,16 @@ body {
         margin: util.rem(32) 0;
     }
 
-    &__contents {
+    &__custom__contents {
+        display: grid;
+        align-content: center;
+
+        width: 100%;
+
+        padding: 0 util.rem(48) util.rem(32);
+    }
+
+    &__support__contents {
         display: grid;
         align-content: center;
 
@@ -842,6 +859,7 @@ body {
         display: grid;
         grid-column-gap: util.rem(36);
         grid-template: repeat(2, auto) / repeat(3, util.rem(300));
+        justify-content: center;
     }
 
     &__card {
