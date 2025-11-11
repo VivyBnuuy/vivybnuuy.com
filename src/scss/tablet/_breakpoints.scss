@@ -2,6 +2,37 @@
 @use "../global/variables" as var;
 @use "../global/typography" as fonts;
 
+@media screen and (max-width: 1240px) {
+    .webdev {
+        justify-items: unset;
+
+        max-width: util.rem(720);
+
+        margin: 0 util.rem(48);
+
+        &__top {
+            max-width: util.rem(720);
+            min-width: unset;
+        }
+
+        &__custom__contents {
+            max-width: util.rem(720);
+        }
+
+        &__support__contents {
+            max-width: util.rem(720);
+        }
+
+        &__cards__container {
+            grid-template: repeat(3, auto) / auto;
+            grid-column-gap: unset;
+            grid-row-gap: util.rem(36);
+
+            margin: 0 0 util.rem(16) 0;
+        }
+    }
+}
+
 @media screen and (max-width: 1190px) {
     .exit-icon::after {
         transform: translateX(-85%)   translateY(-100%);
